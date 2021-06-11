@@ -2,6 +2,10 @@ import 'package:catalog_app/Pages/home.dart';
 import 'package:catalog_app/Pages/login.dart';
 import 'package:flutter/material.dart';
 
+/*
+flutter run -d chrome --web-port=8080 --web-hostname=10.110.164.217
+*/
+
 void main() {
   runApp(MyApp());
 }
