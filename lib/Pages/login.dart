@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class Login extends StatelessWidget {
@@ -11,15 +9,16 @@ class Login extends StatelessWidget {
       color: Colors.white,
       child: Column(
         children: [
+          SizedBox(height: 50.0),
           Image.asset(
-            "assets/images/login_image.png",
+            "assets/login.png",
             fit: BoxFit.cover,
           ),
           SizedBox(height: 30.0),
           Text(
             'Login',
             style: TextStyle(
-              fontSize: 25,
+              fontSize: 32,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -47,7 +46,14 @@ class Login extends StatelessWidget {
                 onPressed: () {
                   print('Hello US');
                 },
-              )
+              ),
+              ElevatedButton(
+                child: Text('Register'),
+                onPressed: () {
+                  print('Register Now');
+                },
+              ),
+              Text('Terms & Services'),
             ]),
           )
         ],

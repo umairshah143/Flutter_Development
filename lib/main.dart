@@ -1,7 +1,7 @@
 import 'package:catalog_app/Pages/home.dart';
 import 'package:catalog_app/Pages/login.dart';
+import 'package:catalog_app/Pages/pra.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 /*
 flutter run -d chrome --web-port=8080 --web-hostname=10.110.164.217
@@ -10,7 +10,7 @@ flutter run -d chrome --web-port=8080 --web-hostname=10.110.164.217
 void main() {
   runApp(MyApp());
 }
-
+ 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -20,7 +20,6 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: ThemeData(
         primarySwatch: Colors.orange,
-        fontFamily: GoogleFonts.lato().fontFamily,
       ),
       darkTheme: ThemeData(brightness: Brightness.dark),
       initialRoute: "/login",
@@ -28,6 +27,7 @@ class MyApp extends StatelessWidget {
         "/home": (context) => HomePage(),
         "/": (context) => Login(),
         "/login": (context) => Login(),
+        "/pra": (context) => Pra(),
       },
     );
   }
